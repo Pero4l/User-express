@@ -38,7 +38,7 @@ app.get("/", (req, res) => {
 
 app.post("/register", (req, res) => {
   const { name, email, password } = req.body;
-  console.log(req.body);
+
   
 
   let users = readUsers();
@@ -52,7 +52,7 @@ app.post("/register", (req, res) => {
     });
   }
 
-  const newUser = { id, name: name, email: email, password: password, date };
+  const newUser = { id, name, email, password, date };
   users.push(newUser);
   writeUsers(users);
 
@@ -61,6 +61,30 @@ app.post("/register", (req, res) => {
     message: "Account created successfully",
     data: newUser
   });
+});
+
+
+
+app.post("/login", (req, res) => {
+    const { email, password } = req.body;
+
+    let users = readUsers();
+
+    console.log(users);
+
+    const user = users.find(u => u.email === email && u.password === password);
+
+    if (!user) {
+        res.status(400).json({
+            success: false,
+            message: "Login Invalid"
+        });
+    } else {
+        res.status(200).json({
+            success: true,
+            message: "Login Successfully"
+        });
+    }
 });
 
 
