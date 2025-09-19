@@ -1,16 +1,30 @@
 [
-    {   "id": 1,
-        "name": "test",
-        "email": "test@gmail.com",
-        "password": "12345",
-
-        "post": [
-            {
-                "title": "Hello world",
-                "description": "I am testing my backend skill",
-                "price": "$300",
-                "date": "28 May 2025"
-            }
-        ]
-    }
+  {
+    "id": 1,
+    "name": "test",
+    "email": "test@gmail.com",
+    "password": "12345",
+    "post": [
+      {
+        "title": "Hello world",
+        "description": "I am testing my backend skill",
+        "price": "$300",
+        "date": "28 May 2025"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Peter",
+    "email": "peter@test.com",
+    "password": "1234",
+    "date": "9/19/2025, 2:08:56 PM"
+  },
+  {
+    "id": 3,
+    "name": "Joy",
+    "email": "joy@test.com",
+    "password": "1234",
+    "date": "9/19/2025, 2:11:02 PM"
+  }
 ]
