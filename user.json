@@ -1,0 +1,16 @@
+[
+    {   "id": 1,
+        "name": "test",
+        "email": "test@gmail.com",
+        "password": "12345",
+
+        "post": [
+            {
+                "title": "Hello world",
+                "description": "I am testing my backend skill",
+                "price": "$300",
+                "date": "28 May 2025"
+            }
+        ]
+    }
+]
