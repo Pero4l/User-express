@@ -1,4 +1,5 @@
 const express = require("express");
+const {readPosts} = require("./controllers/file-check")
 
 const app = express();
 
@@ -15,9 +16,11 @@ app.use(express.json());
 
 
 app.get("/", (req, res) => {
+  allPost = readPosts();
   res.status(200).json({
     success: true,
-    message: "Welcome DevPTB, the server is running 🚀"
+    message: "Welcome DevPTB, the server is running 🚀",
+    data: allPost
   });
 });
 
