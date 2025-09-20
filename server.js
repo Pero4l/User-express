@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 
 const authRouter = require("./routers/auth.route")
+const ticketRouter = require("./routers/ticket.route")
 
 const PORT = 7000;
 
@@ -22,7 +23,7 @@ app.get("/", (req, res) => {
 
 
 app.use('/auth', authRouter)
-
+app.use('/ticket', ticketRouter)
 
 app.listen(PORT, () => {
   console.log(`Server running on PORT ${PORT}`);
