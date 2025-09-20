@@ -37,7 +37,7 @@ function writeUsers(users) {
 
 function writePosts(posts) {
   try {
-    fs.writeFileSync(POST, JSON.stringify(users, null, 2));
+    fs.writeFileSync(POST, JSON.stringify(posts, null, 2));
   } catch (err) {
     console.log("Error writing users:", err);
   }

@@ -1,8 +1,16 @@
- [
-      {
-        "title": "Hello world",
-        "description": "I am testing my backend skill",
-        "price": "$300",
-        "date": "28 May 2025"
-      }
-    ]
+[
+  {
+    "title": "Hello world",
+    "description": "I am testing my backend skill",
+    "price": "$300",
+    "date": "28 May 2025"
+  },
+  {
+    "id": 2,
+    "title": "Music Show",
+    "type": "Regular",
+    "description": "Rema music performance live in london",
+    "price": "$500",
+    "date": "9/20/2025, 11:44:47 PM"
+  }
+]
