@@ -8,6 +8,10 @@ function createPost(req, res){
     const id = users.length + 1;
   const date = new Date().toLocaleString();
 
+  if(title=== post.title && description === post.description && type === post.type && price === post.price){
+    re
+  }
+
 
     const newPost = {
         id,
@@ -17,4 +21,6 @@ function createPost(req, res){
         price,
         date
     }
+
+
 }
