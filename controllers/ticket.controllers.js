@@ -5,7 +5,7 @@ function createPost(req, res){
 
     let post = readPosts();
 
-    const id = users.length + 1;
+    const id = post.length + 1;
   const date = new Date().toLocaleString();
 
   if(title=== post.title && description === post.description && type === post.type && price === post.price){
