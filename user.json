@@ -32,5 +32,12 @@
     "email": "ptb@test.com",
     "password": "1234",
     "date": "9/19/2025, 3:52:41 PM"
+  },
+  {
+    "id": 6,
+    "name": "Joy",
+    "email": "joy@gmail.com",
+    "password": "Joy123",
+    "date": "9/24/2025, 11:27:01 PM"
   }
 ]
